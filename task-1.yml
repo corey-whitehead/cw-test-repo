@@ -13,4 +13,4 @@ run:
   args:
    - -cx
    - |
-       echo $(date) ': output to my artifact please' > my-artifact/artifact.out
+       echo $(date) ': testing git update to send pipeline changes' > my-artifact/artifact.out
