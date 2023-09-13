@@ -10,6 +10,12 @@ resources:
     branch: main
 
 jobs:
+- name: job-update
+  plan:
+  - get: my-repo
+    trigger: true
+  - task: task-update
+    file: my-repo/update-task.yml
 - name: job-1
   public: true
   plan:
