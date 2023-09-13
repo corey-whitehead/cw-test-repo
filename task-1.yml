@@ -12,3 +12,6 @@ run:
   path: sh
   args: |
     echo $(date) ': output to my artifact please' > my-artifact/artifact.out
+   - -cx
+   - |
+       echo $(date) ': output to my artifact please' > my-artifact/artifact.out
