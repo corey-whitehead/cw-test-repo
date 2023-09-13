@@ -1,0 +1,22 @@
+---
+resources:
+- name: schedule
+  type: time
+  source: {interval: 5m}
+- name: my-repo
+  type: git
+  source:
+    uri: https://github.com/corey-whitehead/cw-test-repo.git
+    branch: main
+
+jobs:
+- name: job-1
+  public: true
+  plan:
+  - get: schedule
+    trigger: true
+  - get: my-repo
+  - task: task-1
+    file: my-repo/task-1.yml
+  - task: task-2
+    file: my-repo/task-2.yml
