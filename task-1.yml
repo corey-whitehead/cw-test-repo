@@ -5,6 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs: my-repo
+
 outputs: 
 - name: my-artifact
 
