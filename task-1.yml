@@ -1,0 +1,13 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: busybox}
+
+outputs: 
+- name: my-artifact
+run:
+  path: sh
+  args: |
+    echo $(date) ": output to my artifact please" > my-artifact/artifact.out
