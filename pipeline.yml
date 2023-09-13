@@ -26,3 +26,5 @@ jobs:
     file: my-repo/task-1.yml
   - task: task-2
     file: my-repo/task-2.yml
+  - task: task-3
+    file: my-repo/task-3.yml
