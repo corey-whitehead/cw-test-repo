@@ -7,4 +7,4 @@ image_resource:
 
 run:
   path: echo
-  args: ["hello world - my string here"]
+  args: ["hello world - i've made a commit"]
