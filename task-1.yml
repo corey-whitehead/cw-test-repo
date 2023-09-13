@@ -10,8 +10,7 @@ outputs:
 
 run:
   path: sh
-  args: |
-    echo $(date) ': output to my artifact please' > my-artifact/artifact.out
+  args:
    - -cx
    - |
        echo $(date) ': output to my artifact please' > my-artifact/artifact.out
